@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Aujournuit';
+    src: url('/fonts/Aujournuit-Regular.woff2');
+}
+
+body {
+    font-family: 'Aujournuit';
+    color: #50C878;
+    background-color: #000;
+}
