@@ -25,7 +25,7 @@ This site is a **React-based** single-page application, built with a minimalist 
 ## Contact
 
 For collaboration, feedback, or conversation:
-[mail](juan.trujillo1@protonmail.com) | 
+[mail](mailto:juan.trujillo1@protonmail.com) | 
 [instagram](https://instagram.com/juanandres.tt)
 
 ---
