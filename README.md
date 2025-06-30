@@ -1,4 +1,4 @@
-# 🌐 juantrujillo.world — Personal Portfolio
+# Personal Portfolio
 
 Welcome to [juantrujillo.world](https://juantrujillo.world), a personal and experimental digital space dedicated to design, writing, and web development.
 
@@ -25,8 +25,8 @@ This site is a **React-based** single-page application, built with a minimalist 
 ## Contact
 
 For collaboration, feedback, or conversation:
-[Mail](juan.trujillo1@protonmail.com)
-[Instagram](https://instagram.com/juanandres.tt)
+[mail](juan.trujillo1@protonmail.com) | 
+[instagram](https://instagram.com/juanandres.tt)
 
 ---
 
