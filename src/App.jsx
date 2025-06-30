@@ -8,7 +8,6 @@ import old from "./assets/old.jpg";
 const images = [cat, plant, yokai, glissant, old];
 
 function getRandomPosition(maxWidth, maxHeight, imgWidth, imgHeight) {
-  // Ensure images stay within the section bounds
   const left = Math.random() * (maxWidth - imgWidth);
   const top = Math.random() * (maxHeight - imgHeight);
   return { left, top };
@@ -29,8 +28,7 @@ const aboutContent = (
 import { useState, useRef, useEffect } from "react";
 
 function App() {
-  // Section maxWidth: 700, minHeight: 100vh (assume 900px for randomization)
-  // Use window size for image bounds
+
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight
@@ -52,7 +50,6 @@ function App() {
 
   const [showAbout, setShowAbout] = useState(false);
 
-  // Store image sizes and positions
   const [imgData, setImgData] = useState(
     images.map(() => ({
       width: null,
@@ -81,11 +78,9 @@ function App() {
     }
   }, [imgData, windowSize.width, windowSize.height, imagesPositioned]);
 
-  // Handler for when an image loads
   const MAX_DIM = 180;
   const handleImgLoad = (e, idx) => {
     const { naturalWidth, naturalHeight } = e.target;
-    // Scale down if too large, keep aspect ratio
     let width = naturalWidth;
     let height = naturalHeight;
     if (width > MAX_DIM || height > MAX_DIM) {
@@ -102,10 +97,8 @@ function App() {
     );
   };
 
-  // Track which image is being dragged and the offset
   const dragInfo = useRef({ idx: null, offsetX: 0, offsetY: 0 });
 
-  // Mouse event handlers
   const handleMouseDown = (e, idx) => {
     e.preventDefault();
     const imgRect = e.target.getBoundingClientRect();
@@ -125,7 +118,6 @@ function App() {
     if (!img) return;
     let newLeft = e.clientX - offsetX;
     let newTop = e.clientY - offsetY;
-    // Clamp to window bounds
     newLeft = Math.max(0, Math.min(windowSize.width - img.width, newLeft));
     newTop = Math.max(0, Math.min(windowSize.height - img.height, newTop));
     setImgData((prev) =>
@@ -139,7 +131,6 @@ function App() {
     window.removeEventListener("mouseup", handleMouseUp);
   };
 
-  // Touch event handlers for mobile
   const handleTouchStart = (e, idx) => {
     const touch = e.touches[0];
     const imgRect = e.target.getBoundingClientRect();
@@ -174,10 +165,8 @@ function App() {
     window.removeEventListener("touchend", handleTouchEnd);
   };
 
-  // Render images with drag handlers and original proportions
   const imageElements = images.map((src, idx) => {
     const { left, top, width, height, loaded } = imgData[idx];
-    // Don't render until loaded and positioned
     if (!loaded || left === null || top === null) {
       return (
         <img
