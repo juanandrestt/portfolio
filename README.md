@@ -1,12 +1,33 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to [juantrujillo.world](https://juantrujillo.world), a personal and experimental digital space dedicated to design, writing, and web development.
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My name is Juan Trujillo. I come from a background in publishing and language teaching, and I’m currently transitioning into web development — with a strong focus on aesthetics, creativity, and hybrid storytelling.
 
-## Expanding the ESLint configuration
+My work draws from literature, cinema, and a personal blend of my Latin American heritage.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+This site is a **React-based** single-page application, built with a minimalist and handcrafted approach.
+
+- **React** – core JavaScript library for UI
+- **Vite** – fast modern frontend tooling
+- **CSS3** – custom styling, no framework
+- **Hosted on**: [Vercel](https://vercel.com)
+- **Domain name**: registered via [Porkbun](https://porkbun.com)
+
+## Coming Soon
+- Better accessibility and responsive design  
+- Migration to a framework like **Next.js** or **Astro** for scalability  
+
+## Contact
+
+For collaboration, feedback, or conversation:
+[mail](mailto:juan.trujillo1@protonmail.com) | 
+[instagram](https://instagram.com/juanandres.tt)
+
+---
+
+Thanks for visiting.
