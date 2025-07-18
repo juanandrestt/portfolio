@@ -60,7 +60,6 @@ function App() {
     }))
   );
 
-  // Only set random positions once after all images are loaded
   const [imagesPositioned, setImagesPositioned] = useState(false);
 
   useEffect(() => {
@@ -190,7 +189,7 @@ function App() {
           top: `${top}px`,
           width: `${width}px`,
           height: `${height}px`,
-          zIndex: 2 + idx // allow overlay
+          zIndex: 2 + idx
         }}
         onMouseDown={(e) => handleMouseDown(e, idx)}
         onTouchStart={(e) => handleTouchStart(e, idx)}
