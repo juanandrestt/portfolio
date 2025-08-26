@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function Projects() {
 	return (
-		<div className='min-h-screen flex items-center justify-center'>
-			<span>Coming soon...</span>
-		</div>
+		<main>
+			<Link href='/projects/the-infinite-library'>The Infinite Library</Link>
+		</main>
 	);
 }
