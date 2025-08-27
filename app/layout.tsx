@@ -46,7 +46,7 @@ export default function RootLayout({
 							</div>
 						</div>
 
-						<div className='flex space-x-1 text-sm text-gray-600'>
+						{/* <div className='flex space-x-1 text-sm text-gray-600'>
 							<Link
 								href='/'
 								className='link hover:text-gray-900 transition-colors'>
@@ -58,7 +58,7 @@ export default function RootLayout({
 								className='link hover:text-gray-900 transition-colors'>
 								fr
 							</Link>
-						</div>
+						</div> */}
 					</aside>
 
 					<main className='flex-1'>{children}</main>

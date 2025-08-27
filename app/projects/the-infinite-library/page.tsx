@@ -1,42 +1,56 @@
+import Link from "next/link";
+
 export default function TheInfiniteLibrary() {
 	return (
-		<article className=''>
-			The Infinite Library interroge les limites de la recommandation
-			algorithmique appliquée à la littérature. Ce projet, développé en Next.js
-			avec une architecture de bases de données vectorielles, reproduit et étend
-			le concept de literature-map.com en substituant aux données
-			comportementales des utilisateurs un système d&apos;embeddings vectoriels
-			censé capturer les <i>similarités</i> entre auteurs.
+		<article className='text-justify py-2'>
+			The Infinite Library interrogates the limits of algorithmic recommendation
+			applied to literature. This project, built with Next.js and a vector
+			database architecture, reproduces and extends{" "}
+			<Link className='underline' href='https://www.literature-map.com/'>
+				literature-map.com
+			</Link>{" "}
+			concept by substituting user behavioral data with a{" "}
+			<Link
+				className='underline'
+				href='https://en.wikipedia.org/wiki/Embedding_(machine_learning)'>
+				vector embeddings
+			</Link>{" "}
+			system meant to capture <i>similarities</i> between authors. The technical
+			principle is simple:{" "}
+			<Link
+				className='underline'
+				href='https://en.wikipedia.org/wiki/Language_model'>
+				language models
+			</Link>{" "}
+			transform author information into multidimensional numerical
+			representations, enabling the calculation of mathematical proximities
+			between writers*. These distances in vector space are then translated into
+			recommendations, creating a cartography of literary affinities according
+			to the machine.
 			<br />
-			Le principe technique est simple : des modèles de langage transforment les
-			informations des auteurs et autrices en représentations numériques
-			multidimensionnelles, permettant de calculer des proximités mathématiques
-			entre écrivains. Ces distances dans l&apos;espace vectoriel sont ensuite
-			traduites en recommandations, créant une cartographie des affinités
-			littéraires selon la machine. Le résultat produit des rapprochements
-			parfois surprenants et il faut être clair sur ce que ces connexions
-			révèlent : ces liens sont artificiels. Ils ne procèdent d&apos;aucune
-			analyse littéraire au sens traditionnel du terme, ne s&apos;appuient sur
-			aucune connaissance des contextes historiques, des influences avouées, des
-			débats esthétiques qui traversent réellement les œuvres. L&apos;algorithme
-			opère sur des patterns linguistiques, des récurrences lexicales, des
-			structures syntaxiques, produisant des associations qui disent davantage
-			sur les biais des corpus d&apos;entraînement que sur les véritables
-			parentés littéraires.
 			<br />
-			Pourtant, ces rapprochements mécaniques présentent un intérêt documentaire
-			singulier. Ils offrent une fenêtre sur la façon dont les machines traitent
-			le langage, sur les catégories implicites qu&apos;elles construisent, sur
-			leur manière particulière de <i>lire</i>
-			sans comprendre.
+			The result produces sometimes surprising connections, and we must be clear
+			about what these connections reveal: these links are artificial. They
+			proceed from no literary analysis in the traditional sense, rely on no
+			knowledge of historical contexts, acknowledged influences, or aesthetic
+			debates that actually traverse the works. The algorithm operates on
+			linguistic patterns, lexical recurrences, syntactic structures, producing
+			associations that say more about the biases of training corpora than about
+			genuine literary kinships. Yet these mechanical approximations present a
+			singular documentary interest. They offer a window into how machines
+			process language, the implicit categories they construct, their particular
+			way of <i>reading</i> without understanding.
 			<br />
-			The Infinite Library devient ainsi un laboratoire d&apos;observation des
-			processus algorithmiques, un outil pour interroger ce que
-			l&apos;intelligence artificielle projette sur la littérature quand elle
-			prétend en saisir les affinités. Ce projet explore donc moins la
-			littérature elle-même que les médiations techniques qui s&apos;interposent
-			désormais entre les lecteurs et les œuvres, questionnant ce que nous
-			acceptons de déléguer aux machines dans notre rapport à la culture.
+			<br />
+			This project therefore explores less literature itself than the technical
+			mediations that now interpose between readers and works, questioning what
+			we accept to delegate to machines in our relationship to culture.
+			<br />
+			<br />*
+			<i className='text-sm'>
+				Given my humble literary background, I have to admit the calculations
+				mentionned were also generated with the help of an LLM.
+			</i>
 		</article>
 	);
 }
